@@ -102,6 +102,8 @@ It's unfortunate that namespaces have forced nearly every C# class to be indente
 
 1. Remove the curly braces for the `Model` namespace and add a `;` after `Model`.
 
+![](img/16.png)
+
 ```csharp
 using System.IO;
 
@@ -116,6 +118,10 @@ struct Person
         => File.WriteAllText(filePath, ToString());
 }
 ```
+
+
+
+![](img/17.png)
 
 ## Global Usings
 
@@ -284,6 +290,8 @@ In this case, there are multiple overloads, so a delegate type can't be inferred
     ```
     
 
+
+
 # Interpolated String Handlers
 
 1. Open `OtherStuff.cs`.
@@ -318,3 +326,7 @@ public void DebugAssert(bool condition)
 ```
 
 In C# 6, the interpolated string passed to `Debug.Assert` is *always* created, even if `condition` is `true`. In C# 10, the arguments to the interpolated string won't be evaluated unless `condition` is `false`.
+
+
+
+![](img/18.png)
