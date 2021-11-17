@@ -1,7 +1,8 @@
-﻿using System.IO;
+﻿using Model;
+using System.IO;
 using static System.Console;
 
-var person = new // Person Con el comentario de Person, sería totalmente de tipo anónimo
+var person = new Person //Con el comentario de Person, sería totalmente de tipo anónimo
 {
 	FirstName = "Billy",
 	LastName = "Vanegas"
@@ -22,17 +23,3 @@ WriteLine($"== operator: {person == originalPerson}");
 
 Person p1 = default;
 Person p2 = new();
-
-//record struct Person
-record struct Person
-{
-	//public Person()
-	//{
-		//FirstName = "Miguel";
-		//LastName = "";
-	//}
-	public string FirstName { get; init; } = "Miguel";
-	public string LastName { get; init; } = "Vanegas";
-
-	public void WriteToFile(string filePath) => File.WriteAllText(filePath, ToString());
-}
