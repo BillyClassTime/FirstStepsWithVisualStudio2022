@@ -1,8 +1,4 @@
-﻿using Model;
-using System.IO;
-using static System.Console;
-
-var person = new Person //Con el comentario de Person, sería totalmente de tipo anónimo
+﻿var person = new //Person //Con el comentario de Person, sería totalmente de tipo anónimo
 {
 	FirstName = "Billy",
 	LastName = "Vanegas"
