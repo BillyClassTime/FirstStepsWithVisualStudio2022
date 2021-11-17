@@ -1,16 +1,6 @@
-
-
-
-
-
-
-
-
 # Primeros pasos con Visual Studio 2022
 
 Después de su lanzamiento mundial la semana pasada, he instalado la versión definitiva de visual studio 2022 y aqui os dejo mis conclusiones:
-
-
 
 ## Instalación de .Net 6.0
 
@@ -101,3 +91,6 @@ Pongo un poco de código, para ver las estructuras, los defaults y otras cosas q
 
 ![](img/07A.png)
 
+
+
+[Ultima parte](RemoviendoElDesorden.md) 
