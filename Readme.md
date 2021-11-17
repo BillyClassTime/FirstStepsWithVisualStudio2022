@@ -1,6 +1,6 @@
 # Primeros pasos con Visual Studio 2022
 
-Después de su lanzamiento mundial la semana pasada, he instalado la versión definitiva de visual studio 2022 y aqui os dejo mis conclusiones:
+Después de su lanzamiento mundial la semana pasada, he instalado la versión definitiva de visual studio 2022 y aqui os dejo mis revisiones:
 
 ## Instalación de .Net 6.0
 
