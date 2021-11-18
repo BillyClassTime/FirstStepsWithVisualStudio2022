@@ -11,11 +11,44 @@ internal class Lambdas
         var parse = (ref string s) => int.Parse(s);
         object parse1 = (string s) => int.Parse(s);
         Delegate parse2 = (string s) => int.Parse(s);
-        Expression parse3 = (string s) => int.Parse(s);
+        LambdaExpression parse3 = (string s) => int.Parse(s);
 
         //Func<bool, object> choose = (bool b) => b ? 1 : "two";
         var choose = object (bool b) => b ? 1 : "two";
+
+        //Action<string, int> dateOfMeeting = (name, day) =>
+        var dateOfmetting = (string name, int day) =>
+        {
+            WriteLine($"The date of meeting:{name} is {day}");
+        };
+        var respuesta = QueryCityDataForYears("New York City", 1960,2010);
     }
+
+    //public string QueryCityDataForYears(string name, int year1, int year2, string notas) => String.Concat(name,year1,year2);
+    
+    public Func<string, int, int, string> QueryCityDataForYears = (name, year1, year2) =>
+    {
+        int population1 = 0, population2 = 0;
+        double area = 0;
+
+        if (name == "New York City")
+        {
+            area = 468.48;
+            if (year1 == 1960)
+            {
+                population1 = 7781984;
+            }
+            if (year2 == 2010)
+            {
+                population2 = 8175133;
+            }
+            //return (name, area, year1, population1, year2, population2);
+            return name;
+        }
+        return String.Empty;
+        //return ("", 0, 0, 0, 0, 0);
+    };
+
 }
 
 internal class MethodGroups
